@@ -2,7 +2,6 @@
     "namespace": "irestful",
     "name": "concretebankbranches",
     "externals": [
-                    "vendors://irestful/concretebooleans/dependencyinjection.json",
                     "vendors://irestful/concreteobjectloaders/dependencyinjection.json",
                     "vendors://irestful/concretestrings/dependencyinjection.json",
                     "vendors://irestful/concreteuuids/dependencyinjection.json",
@@ -24,13 +23,9 @@
         "builderfactory": {
             "class": "ConcreteEntities\\Infrastructure\\Factories\\ConcreteEntityBuilderFactory",
             "dependencies": [
-                                "irestful.concretebooleans.adapter",
                                 "irestful.concreteobjectloaders.adapter",
                                 "configs.builder_factory_classname"
             ]
-        },
-        "irestful.concretebooleans.adapter" : {
-            "class": "ConcreteDependencyInjectionObjectPlaceHolders\\Infrastructure\\Objects\\ConcreteDependencyInjectionObjectPlaceHolder"
         },
         "irestful.concreteobjectloaders.adapter" : {
             "class": "ConcreteDependencyInjectionObjectPlaceHolders\\Infrastructure\\Objects\\ConcreteDependencyInjectionObjectPlaceHolder"
